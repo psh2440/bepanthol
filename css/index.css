@@ -1,0 +1,662 @@
+@charset "utf-8";
+
+/**** index.css ***********************/
+
+html,
+body {
+    width: 100%;
+    height: 100%;
+    /* outline: 2px solid red;  */
+}
+
+body {
+    font-family: "Sejong hospital Light";
+}
+
+
+.inner {
+    width: 80%;
+    margin: 0 auto;
+    /*outline: 2px solid green;*/
+}
+
+.page {
+    width: 100%;
+    height: 100%;
+    /* outline: 2px solid red; */
+    overflow: hidden;
+    /*!!!!!*/
+}
+
+
+/***  class bnav   *********************************/
+
+.bnav {
+    /* outline: 2px solid red; */
+    width: 16px;
+    position: fixed;
+    right: 3%;
+    top: 50%;
+    transform: translateY(-30%);
+    z-index: 8888;
+
+}
+
+.bnav li {
+    margin: 10px 0;
+    width: 100%;
+}
+
+.bnav li a {
+    color: #7fbade;
+}
+
+.bnav li a span {}
+
+
+.bnav .selB a {
+    /* color: rgb(255 248 203) !important; */
+    color: #212e63 !important;
+}
+
+
+/********* main  *********************************************************************************/
+main {
+    /* outline: 2px solid red; */
+    /*width: 100%;
+    height: 100%;*/
+}
+
+main .main-slide {
+    width: 100%;
+    height: 100%;
+    background: url(../image/main_bg.png) no-repeat top/cover;
+}
+
+main .main-slide .txt-wrap {
+    text-align: center;
+    position: relative;
+    top: 50%;
+    transform: translateY(-50%);
+    /*outline: 2px solid red;*/
+}
+
+main .main-slide .txt-wrap p {
+    font-size: 28px;
+    margin-bottom: 28px;
+}
+
+main .main-slide .txt-wrap h2 {
+    font-size: 58px;
+    font-weight: bold;
+}
+
+
+/*********  Class video  ************************************************************************/
+.video {
+    text-align: center;
+}
+
+.video .content {
+
+    /*padding-top: 100px;
+    height: 100%;
+    box-sizing: border-box;*/
+
+    height: calc(100% - 100px);
+    margin-top: 100px;
+
+    /* background-color: yellow; */
+}
+
+.video .txt-wrap {
+    /*padding-top: 130px;
+    outline: 2px solid blue;*/
+
+    padding-top: 50px;
+    margin-bottom: 30px;
+}
+
+
+.video .txt-wrap h3 {
+    color: #7fbade;
+    font-weight: bold;
+    /*line-height: 50px;*/
+    font-size: 34px;
+    margin-bottom: 20px;
+}
+
+.video .txt-wrap p {
+    /*line-height: 30px;*/
+    font-size: 20px;
+}
+
+.video .video-box {
+    height: 70%;
+    /*outline: 2px solid blue;*/
+}
+
+.video .video-box video {
+    height: 100%;
+    /*width: 70%;*/
+}
+
+
+/*********  Class promise  ************************************************************************/
+/* .promise {
+    outline: 2px solid red;
+    width: 100%;
+    height: 100%;
+
+}
+
+.promise .inner {
+    padding-top: 300px;
+}
+
+
+.promise .promise-wrap {
+    padding-top: 20px;
+}
+
+.promise .inner .txt-wrap {
+    width: 50%;
+    padding-top: 150px;
+}
+
+.promise .inner .txt-wrap h2 {
+    line-height: 30px;
+    font-size: 28px;
+    color: #7fbade;
+    font-weight: bold;
+    margin-bottom: 14px;
+}
+
+.promise .inner .txt-wrap h3 {
+    line-height: 50px;
+    font-size: 30px;
+    margin-bottom: 50px;
+}
+
+.promise .inner .txt-wrap p {
+    line-height: 1.5;
+    font-size: 20px;
+}
+
+.promise .inner .img-wrap {
+    width: 50%;
+}
+
+.promise .inner img {
+    width: 100%;
+} */
+
+.promise {
+    /*padding-top: 220px;*/
+}
+
+.promise .inner {
+    height: calc(100% - 100px);
+    margin-top: 100px;
+}
+
+.promise .content-wrap {
+    position: relative;
+    top: 50%;
+    transform: translateY(-50%);
+    /*background-color: greenyellow;*/
+}
+
+.promise .content-wrap>div {
+    width: 50%;
+}
+
+.promise .content-wrap .txt-wrap {
+    /*float: left;
+    width: 50%;*/
+    /*padding-top: 150px;
+    box-sizing: border-box;*/
+
+    padding: 0 30px;
+    box-sizing: border-box;
+
+    position: absolute;
+    top: 50%;
+    left: 0;
+    transform: translateY(-50%);
+
+    /*outline: 2px solid blue;*/
+}
+
+.promise .txt-wrap h3 {
+    color: #7fbade;
+    font-weight: bold;
+    font-size: 34px;
+    margin-bottom: 10px;
+}
+
+.promise .txt-wrap h4 {
+    font-size: 29px;
+    margin-bottom: 40px;
+}
+
+.promise .txt-wrap p {
+    line-height: 1.5;
+    font-size: 18px;
+    letter-spacing: -0.2px;
+}
+
+.promise .content-wrap .img-box {
+    /*width: 50%;*/
+    float: right;
+    text-align: center;
+
+    /*outline: 2px solid blue;*/
+}
+
+.promise img {
+    width: 90%;
+}
+
+/*********  Class product  ************************************************************************/
+.product {
+
+    /* overflow: hidden; */
+    position: relative;
+
+    background: url(../image/line1-1.png) no-repeat;
+    background-position: -176px 270px;
+
+
+}
+
+.product .inner {
+    width: 100%;
+    height: 100%;
+    position: relative;
+}
+
+.product .product-wrap {
+    /* outline: 2px solid purple; */
+    margin-top: 100px;
+    float: left;
+    /*width: 40%;*/
+    width: 50%;
+    padding-left: 10%;
+    box-sizing: border-box;
+    /* height: calc(100% - 100px); */
+
+    /*padding: 0 30px;*/
+
+    position: relative;
+    top: 10%;
+}
+
+
+.product .product-wrap .product-title {
+    /* outline: 2px solid #000; */
+    margin-bottom: 50px;
+}
+
+.product .product-wrap .product-title h3 {
+    color: #7fbade;
+    font-weight: bold;
+    font-size: 34px;
+    margin-bottom: 20px;
+
+}
+
+.product .product-wrap .product-title h4 {
+    font-size: 29px;
+    line-height: 1.3;
+}
+
+.product .product-wrap .product-icon {
+    /* outline: 2px solid green; */
+    width: 70%;
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.product .product-wrap .product-icon li {
+    /* outline: 2px solid lime; */
+    width: 25%;
+}
+
+.product .product-wrap .product-icon .on {
+    background: url(../image/circle.png) no-repeat top center;
+    background-size: 100%;
+
+}
+
+.product .product-wrap .product-icon .on a {
+    color: #7fbade;
+    font-weight: bold;
+}
+
+.product .product-wrap .product-icon li img {
+    width: 100%;
+}
+
+/* .product .product-wrap .product-icon li:hover img {
+    background: url(../image/circle.png) no-repeat top center;
+    background-size: 100%;
+} */
+
+.product .product-wrap .product-icon li a {
+    display: block;
+}
+
+
+/* .product .product-wrap .product-icon li:hover a {
+    color: #7fbade;
+    font-weight: bold;
+} */
+
+.product-txt-viewer {
+    /* outline: 2px solid red; */
+    width: 100%;
+    overflow: hidden;
+}
+
+.product .product-wrap .product-txt {
+    margin-bottom: 50px;
+    /* outline: 2px solid red; */
+    width: 400%;
+}
+
+
+.product .product-wrap .product-txt li {
+    /* outline: 2px solid plum; */
+    line-height: 1.5;
+    width: 25%;
+    background: url(../image/line2.png) no-repeat;
+    background-position: 10px 10px;
+}
+
+.product .product-wrap .product-txt li p:first-child {
+    font-size: 32px;
+    margin-bottom: 20px;
+}
+
+.product .product-wrap .product-txt li p {
+    font-size: 20px;
+}
+
+/***/
+.product-wrap .more {
+    font-size: 20px;
+}
+.product-wrap .more {
+    display: block;
+}
+
+.product-wrap .more:hover a {
+    color: #7fbade;
+    font-weight: bold;
+    text-decoration: underline;
+}
+
+/***/
+.img-contents {
+    /* outline: 2px solid blue; */
+    float: right;
+    width: 50%;
+    height: 100%;
+    overflow: hidden;
+}
+
+.product .img-wrap {
+    /* outline: 2px solid yellow; */
+    width: 400%;
+    height: 100%;
+}
+
+.product .img-wrap li {
+    width: 25%;
+    height: 100%;
+    /*width: 100%;*/
+}
+
+.product .img-wrap li a {}
+
+.product .img-wrap a img {
+    /* outline: 2px solid red; */
+    width: 100%;
+    height: 100%;
+    display: block;
+}
+
+
+
+/*********  Class better  ************************************************************************/
+
+.better {
+    /* outline: 2px solid red; */
+    background: url(../image/better.png) no-repeat top center;
+    color: #fff;
+    text-align: center;
+    padding-top: 100px;
+    box-sizing: border-box;
+
+}
+
+.better .content {
+    /* outline: 2px solid #eee; */
+    height: calc(100% - 100px);
+    margin-top: 88px;
+
+    position: relative;
+    /*+아이콘기준점?+*/
+}
+
+.better .tit-wrap {
+    /* margin-bottom: 120px; */
+}
+
+.better .tit-wrap h2 {
+    font-size: 48px;
+    font-weight: bold;
+    margin-bottom: 30px;
+}
+
+.better .tit-wrap p {
+    font-size: 20px;
+    line-height: 1.5;
+}
+
+
+.better .icon-wrap {
+    /* background-color:#ccc; */
+    width: 70%;
+    margin: 0 auto;
+
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%, 0%);
+}
+
+.better .icon-wrap li {
+    /* outline: 2px solid orange; */
+    width: 29.33%;
+    margin: 0 2%;
+
+}
+
+.better .icon-wrap li img {
+    margin-bottom: 30px;
+}
+
+
+.better .icon-wrap li h4 {
+    font-size: 24px;
+    margin-bottom: 20px;
+    font-weight: bold;
+    vertical-align: bottom;
+}
+
+.better .icon-wrap li p {
+    font-size: 18px;
+    height: 100px;
+}
+
+
+
+
+/*********  Class news  ************************************************************************/
+
+.news {
+    text-align: center;
+}
+
+.news .content {
+    height: calc(100% - 100px);
+    margin-top: 100px;
+
+}
+
+.news .content .tit-wrap {
+    padding-top: 50px;
+    margin-bottom: 50px;
+}
+
+
+/***/
+/*.news img {
+    display: block;
+    width: 50%;
+}*/
+/***/
+
+.news .tit-wrap {
+    margin-bottom: 30px;
+}
+
+.news .tit-wrap h3 {
+    color: #7fbade;
+    font-weight: bold;
+    font-size: 30px;
+    margin-bottom: 30px;
+}
+
+.news .tit-wrap p {
+    font-size: 18px;
+
+}
+
+.news .news-content {
+    width: 80%;
+    margin: 0 auto 60px;
+    padding: 0 70px;
+    box-sizing: border-box;
+    /* overflow: hidden; */
+    position: relative;
+    /* 버튼 위치 설정 */
+
+    /* background-color: greenyellow; */
+}
+
+.news .news-content .news-slide {
+    /* 슬라이드가 실제 보여지는 영역 */
+    /* outline: 2px solid red; */
+    overflow: hidden;
+}
+
+.news .news-slide .viewer {
+    width: 200%;
+
+}
+
+.news .news-slide .viewer li {
+    width: 23%;
+    /*margin: 0 auto 2%;
+    padding-left: 3%;
+    padding-right: 1%;*/
+    margin: 0 1%;
+
+    /* outline: 2px solid blue; */
+}
+
+.news .news-slide .viewer li img {
+    width: 100%;
+    display: block;
+    margin-bottom: 10px;
+}
+
+.news .news-slide .viewer li .box {
+    /*width: 100%;*/
+    font-size: 20px;
+    /*margin-bottom: 30px;*/
+    padding: 0 5%;
+}
+
+.news .viewer li .box p {
+    font-size: 20px;
+    margin-bottom: 20px;
+    text-align: center;
+    white-space: nowrap;
+
+    /* outline: 1px solid red; */
+
+}
+
+.news .viewer li .box p:last-child {
+    margin-bottom: 0;
+}
+
+
+.news .news-content .arr-left {
+    background-image: url(../image/left-arrow.png);
+    width: 70px;
+    height: 70px;
+    position: absolute;
+    left: 0;
+    top: 50%;
+    transform: translateY(-50%);
+    text-indent: -9999px;
+    display: block;
+}
+
+
+.news .news-content .arr-left:hover {
+    background-image: url(../image/left-arrow-on.png);
+}
+
+
+.news .news-content .arr-right {
+    background-image: url(../image/right-arrow.png);
+    width: 70px;
+    height: 70px;
+    position: absolute;
+    right: 0;
+    top: 50%;
+    transform: translateY(-50%);
+    text-indent: -9999px;
+    display: block;
+}
+
+.news .news-content .arr-right:hover {
+    background-image: url(../image/right-arrow-on.png);
+}
+
+
+
+
+.news .more {
+    /*background-color: red; */
+}
+
+.news .more a {
+    color: #7fbade;
+    font-weight: bold;
+    border: 2px solid #7fbade;
+    border-radius: 50px;
+    padding: 10px 20px;
+    display: inline-block;
+}
+
+.news .more:hover a {
+    background-color: #7fbade;
+    color: #fff;
+}

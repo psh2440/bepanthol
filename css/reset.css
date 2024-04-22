@@ -1,0 +1,57 @@
+@charset "utf-8";
+
+/****reset.css***********************/
+@font-face {
+    font-family: "Sejong hospital Bold";
+    src: url(../fonts/Sejong\ hospital\ Bold.eot) format('embedded-opentype'), url(../fonts/Sejong\ hospital\ Bold.woff) format('woff');
+}
+
+@font-face {
+    font-family: "Sejong hospital Light";
+    src: url(../fonts/Sejong\ hospital\ Light.eot) format('embedded-opentype'), url(../fonts/Sejong\ hospital\ Light.woff) format('woff');
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+ul,
+ol,
+li {
+    list-style: none;
+}
+
+
+ul::after,
+ol::after {
+    content: "";
+    display: block;
+    clear: both;
+}
+
+li {
+    float: left;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-size: 100%;
+    font-weight: 400;
+}
+
+a {
+    text-decoration: none;
+    color: #000;
+}
+
+.clear::after {
+    content: "";
+    display: block;
+    clear: both;
+}
+

@@ -1,0 +1,140 @@
+@charset "utf-8";
+
+/****footer.css***********************/
+
+footer {
+    width: 100%;
+    background-color: rgba(164, 208, 235, 0.5);
+}
+
+footer.page {
+    height: 460px;
+}
+
+footer .inner {
+    width:90%;
+    margin: 0 auto;
+    padding-top: 50px;
+    position: relative;
+    text-align: center;
+}
+footer .footer-logo {
+    /* float: left;
+    width:20%;
+    outline: 2px solid blue; */
+}
+footer .footer-logo img{
+    display: inline-block;
+    
+}
+
+footer .footer-nav {
+    /* outline: 2px solid blue; */
+    width:60%;
+    margin: 40px auto 60px;
+    text-align: center;
+}
+
+footer .footer-nav li {
+    /* outline: 2px solid green; */
+    width: 16.66%;
+    position: relative;
+    padding: 1%;
+    box-sizing: border-box;
+}
+
+footer .footer-nav li a {
+}
+
+footer .footer-nav li::after {
+    content: "";
+    display: block;
+    width: 2px;
+    height: 15px;
+    background-color: #ccc;   
+    position: absolute;
+    left: 100%;
+    top: 5px;
+}
+
+footer .footer-nav li:last-child::after {
+    display: none;
+}
+
+footer .footer-nav li:hover a {
+    color: #7fbade;
+    font-weight: bold;
+    text-decoration: underline;
+}
+
+
+footer .footer-nav li a {}
+
+footer .txt-wrap {
+    margin-bottom: 50px;
+}
+
+footer .txt-wrap p {
+    line-height: 1.4;
+    /* clear: both; */
+}
+
+
+footer .copy {
+    font-size: 18px;
+    margin-bottom: 30px;
+}
+
+footer .sns-wrap {
+    display: inline-block;
+}
+
+footer .sns-wrap li {
+    width: 60px;
+    height: 60px;
+    margin-left: 20px;
+    text-indent: -9999px;
+    
+
+}
+
+footer .sns-wrap li a {
+display: block;
+}
+
+footer .sns-wrap .facebook {
+    background: url(../image/facebook1.png) no-repeat;
+    background-size: 80%;
+}
+
+footer .sns-wrap .facebook:hover a {
+    background: url(../image/facebook2.png) no-repeat;
+    background-size: 80%;
+    width: 60px;
+    height: 60px;
+}
+
+footer .sns-wrap .insta {
+    background: url(../image/instagram1.png) no-repeat;
+    
+    background-size: 80%;
+}
+
+footer .sns-wrap .insta:hover a {
+    background: url(../image/instagram2.png) no-repeat;
+    background-size: 80%;
+    width: 60px;
+    height: 60px;
+}
+
+footer .sns-wrap .youtube {
+    background: url(../image/youtube1.png) no-repeat;
+    background-size: 80%;
+}
+
+footer .sns-wrap .youtube:hover a {
+    background: url(../image/youtube2.png) no-repeat;
+    background-size: 80%;
+    width: 60px;
+    height: 60px;
+}
