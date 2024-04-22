@@ -1,0 +1,265 @@
+@charset "utf-8";
+
+
+body {
+    font-family: "Sejong hospital Light";
+}
+
+/****   intro   ******************/
+
+main.intro {
+    position: relative;
+
+}
+
+main video {
+    width: 100%;
+}
+
+main.intro .intro-title {
+    width: 80%;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    color: #fff;
+    text-align: center;
+}
+
+main.intro .intro-title p:first-child {
+    font-size: 30px;
+    margin-bottom: 20px;
+}
+
+main.intro .intro-title p:last-child {
+    font-size: 20px;
+}
+
+/****  section  ***********************/
+section {
+    background: url(../image/wave1.png) no-repeat top center;
+    width: 100%;
+    height: 3400px;
+    display: block;
+}
+
+/**** article .derma-care-title  *************************/
+.derma-care-title {
+    /* outline: 2px solid red; */
+    width: 80%;
+    margin: 0 auto;
+    margin-bottom: 24%;
+    margin-bottom: 200px;
+    color: #fff;
+    padding-top: 10%;
+}
+
+.derma-care-title h2 {
+    font-size: 36px;
+    margin-bottom: 1%;
+}
+
+.derma-care-title h3 {
+    font-size: 70px;
+    font-weight: bold;
+    margin-bottom: 1%;
+}
+
+.derma-care-title p {
+    font-size: 36px;
+}
+
+/**** article .think-about  *************************/
+.think-about {
+    /*  outline: 2px solid red; */
+    width: 80%;
+    margin: 0 auto;
+    text-align: right;
+    color: #fff;
+    margin-bottom: 20%;
+    line-height: 1.5;
+}
+
+.think-about p {
+    font-size: 32px;
+    margin-bottom: 4%;
+}
+
+
+/***** article .union**********************/
+.union {
+    width: 80%;
+    margin: 0 auto;
+    /* outline: 2px solid red; */
+    text-align: center;
+    color: #fff;
+    margin-bottom: 20%;
+}
+
+.union>p {
+    font-size: 32px;
+    line-height: 1.5;
+    margin-bottom: 5%;
+}
+
+/* .icon-wrap {
+    outline: 2px solid rgb(25, 0, 255);
+    width: 80%;
+    margin: 0 auto;
+} */
+
+/* .icon-wrap p {
+    outline: 2px solid red;
+    float: left;
+    width: 16%;
+    height: 300px;
+    margin: 0 2%;
+}
+
+.icon-wrap p:first-child {
+    background-image: ;
+}
+.icon-wrap p:nth-child(2) {}
+.icon-wrap p:nth-child(3) {}
+.icon-wrap p:nth-child(4) {}
+.icon-wrap p:last-child {}
+ */
+
+
+/* .icon-wrap  {
+    outline: 2px solid rgb(25, 0, 255);
+    width: 100%;
+    margin: 0 auto;
+}
+.icon-wrap img {
+    width: 18%;
+    float: left;
+    padding: 1%;
+} */
+
+.union .icon-wrap {
+    /* outline: 2px solid red; */
+    width: 80%;
+    margin: 0 auto;
+}
+
+.union .icon-wrap li {
+    width: 20%;
+    position: relative;
+    padding: 1%;
+    box-sizing: border-box;
+}
+
+.union .icon-wrap li img {
+    width: 100%;
+}
+
+.union .icon-wrap li p {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: navy;
+
+    width: 100%;
+    font-size: 26px;
+}
+
+/*******article .technology*******************/
+.technology {
+    width: 100%;
+    /* outline: 2px solid red; */
+
+    position: relative;
+
+    margin-bottom: 20%;
+}
+
+.technology .tech-title {
+    /* background-color: aqua; */
+
+    position: absolute;
+    left: 50%;
+    top: 10%;
+    transform: translate(-50%, -10%);
+
+    font-size: 44px;
+    font-weight: 800;
+}
+
+.technology .tech-title span {
+    color: #fff;
+}
+
+
+.section1-box,.section2-box  {
+    float: left; 
+    width: 50%;
+    /* outline:2px solid yellowgreen; */
+    
+    padding: 12% 0;
+}
+
+.section1-box {
+    background-color: rgba(145, 213, 255, 0.7);
+}
+
+
+.section2-box {
+    background-color: rgba(0, 157, 255, 0.849);
+    color:#fff
+}
+
+.section-title {
+    font-size: 30px;
+    font-weight: bold;
+    line-height: 1.5;
+    text-align: center;
+    margin-bottom: 10%;  
+}
+
+
+/*/////*/
+.txt-box {
+    width: 33%;
+    margin: 0 auto;
+    margin-bottom: 10%;
+}
+
+.txt-box p:first-child{
+    font-size: 24px;
+    font-weight: bold;
+}
+.txt-box p:last-child{
+    font-size: 20px;
+}
+/*/////*/
+
+
+.technology img {
+    width: 35%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+
+
+/*******article .outro************/
+.outro {
+    width: 100%;
+    background-color: #4d82edd8;
+}
+
+.outro p {
+    width: 80%;
+    margin: 0 auto;
+    padding: 60px 0;
+    color: #fff;
+    font-size: 26px;
+    font-weight: bold;
+    line-height: 2;
+    text-align: center;
+    /* outline: 2px solid red; */
+}

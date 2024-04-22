@@ -1,0 +1,314 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <title>ingredient</title>
+
+    <link rel="stylesheet" href="../css/reset.css">
+    <link rel="stylesheet" href="../css/header.css">
+    <link rel="stylesheet" href="css/ingredient.css">
+    <link rel="stylesheet" href="../css/footer.css">
+
+    <script src="../script/jquery-1.7.2.min.js"></script>
+    <script src="script/jquery-ui.min.js"></script>
+    <script src="../script/header.js"></script>
+    <script>
+        //alert ('업데이트 중입니다! :) 알찬내용으로 다시 만나요!');
+        /* $(document).ready(function () {
+            $('.step').css({
+                opacity: 0
+            });
+
+            $('.step').animate({
+                scrollTop: conOffset
+            },function(){
+                $('.step').css({
+                opacity: 1
+            });
+            });
+        });
+ */
+
+
+        $(window).scroll(function () {
+
+            var winTop = $(window).scrollTop();
+            console.log('scrollTop: ' + winTop)
+
+            var conOffset = $('.what-is').offset().top - 500;
+            console.log('what-is가 탑으로부터 떨어진거리: ' + conOffset);
+
+
+            var outroOffset = $('.outro').offset().top - 500;
+
+            var footerOffset = $('footer').offset().top - 700;
+
+            /* 1.되었음 */
+            /* if (winTop > conOffset) {
+                            $('.fix-img').fadeOut(300);
+                        }
+                        else {
+                            $('.fix-img').fadeIn(300);
+                        } */
+
+
+
+            /* 제품 y스크롤 */
+
+            if (winTop > footerOffset) {
+                $('.fix-img').fadeOut(300);
+            } else if (winTop > outroOffset) {
+                $('.fix-img').fadeIn(300);
+            } else if (winTop > conOffset) {
+                $('.fix-img').fadeOut(300);
+            } else {
+                $('.fix-img').fadeIn(300);
+            }
+
+
+
+
+
+
+
+
+
+        });
+
+
+        /* $(window).scroll(function () {
+
+            var step = 
+
+            if () { }
+
+
+
+        });
+ */
+
+    </script>
+
+</head>
+
+<body>
+    <header class="on">
+        <div class="inner">
+            <h1 class="logo"><a href="../index.html"><img src="../image/logo.png" alt="비판톨 로고"></a></h1>
+
+            <nav>
+                <ul class="gnb">
+                    <li>
+                        <a href="about_us.html">비판톨</a>
+                        <ul class="smenu">
+                            <li><a href="about_us.html">브랜드 스토리</a></li>
+                            <li><a href="ingredient.html">부드러운 핵심성분</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="product.html">제품</a>
+                        <ul class="smenu">
+                            <li><a href="product.html#face">FACE</a></li>
+                            <li><a href="product.html#body">BODY</a></li>
+                            <li><a href="product.html#lip">LIP</a></li>
+                            <li><a href="product.html#multi">MULTI</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="derma_care.html">더마케어스토리</a></li>
+                    <li><a href="notice-news.html">커뮤니티</a>
+                        <ul class="smenu">
+                            <li><a href="notice.html">공지사항</a></li>
+                            <li><a href="news.html">뉴스</a></li>
+                            <li><a href="#">리뷰</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="event_current.html">이벤트</a>
+                        <ul class="smenu">
+                            <li><a href="event_current.html">진행중 이벤트</a></li>
+                            <li><a href="event_end.html">종료된 이벤트</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="store.html">구매처</a></li>
+                </ul>
+            </nav>
+
+            <form action="#" name="searchfrm" class="searsh">
+                <input type="text" name="search" placeholder="립크림">
+                <input type="submit" value="검색">
+            </form>
+        </div>
+    </header>
+
+    <article class='main'>
+        <div class="content-box con1">
+            <div class="title-box">
+                <p>부드러운 핵심성분</p>
+                <p>순도는 높지만 성분은 깨끗하게</p>
+            </div>
+
+
+            <div class="img-box">
+                <img src="image/tit11.png" alt="SPECIAL">
+                <img src="image/tit2.png" alt="CHOICE">
+            </div>
+
+        </div>
+
+        <img class="fix-img" src="image/body1.png" alt="비판톨 대표 제품 : 리플레싱 바디로션 400ml">
+
+
+
+        <div class="content-box con2">
+            <div class="title-box">
+                <p>부드러운 핵심성분</p>
+                <p>순도는 높지만 성분은 깨끗하게</p>
+            </div>
+
+
+            <div class="img-box">
+                <img src="image/tit3.png" alt="WITH">
+                <img src="image/tit4.png" alt="DEXPANTHENOL">
+            </div>
+
+        </div>
+    </article>
+
+
+    <article class="what-is">
+        <div class="title-box">
+            <p>비판톨이 선택한</p>
+            <p>부드러운 핵심성분</p>
+        </div>
+
+        <div class="main-title">
+            <p>덱스판테놀이란?</p>
+            <p>What Is. Dexpanthenol? </p>
+
+            <div class="txt-explain">
+                <p>
+                    우리는 프로비타민 B5라고도 알려진 덱스판테놀의 치유력을 활용해 왔습니다. <br>
+                    <span>"피부의 비타민"</span>이라고 불리는 이 물질은 피부의 건강을 유지하는 데 도움을 주며<br>
+                    신체의 많은 대사 과정에 참여합니다.
+                </p>
+            </div>
+        </div>
+
+        <div>
+            <ul class="step">
+                <li>
+                    <img src="image/what-is-img1.png" alt="">
+                    <p>STEP.1</p>
+                    <p>체내에 흡수된 덱스판테놀은
+                        비타민 B5로 전환됩니다.</p>
+                </li>
+                <li>
+                    <img src="image/what-is-img2.png" alt="">
+                    <p>STEP.2</p>
+                    <p>프로비타민은 판토텐산으로
+                        빠르게 전환되어<br>
+                        조효소A의 역할을 돕습니다</p>
+                </li>
+                <li>
+                    <img src="image/what-is-img3.png" alt="">
+                    <p>STEP.3</p>
+                    <p>피부 상피의 재생 촉진 및
+                        상처완화에 도움되며<br>
+                        피부에 수분을 지켜줍니다.</p>
+                </li>
+            </ul>
+        </div>
+
+    </article>
+
+    <article class="how-to">
+        <div class="title-box">
+            <p>비판톨이 선택한</p>
+            <p>부드러운 핵심성분</p>
+        </div>
+
+        <div class="main-title">
+            <p>덱스판테놀의 효능은?</p>
+            <p>How To. Effects of Dxpanthenol?</p>
+        </div>
+
+        <ul class="list-box">
+            <li>
+                <h5>피부 지질 형성</h5>
+                <p>조효소에 영향을 줌으로써 <br>
+                    피부층 회복과 형성에<br>
+                    긍정적 영향을 줍니다</p>
+            </li>
+            <li>
+                <h5>표피 및 점막 보호</h5>
+                <p>상처나고 손상된 피부의<br>
+                    회복을 도와 빠르게<br>
+                    재생시켜줍니다.</p>
+            </li>
+            <li>
+                <h5>피부 수분 보유</h5>
+                <p>피부 장벽을 강화함으로써<br>
+                    피부 속 수분을 지켜주며<br>
+                    손실을 감소시킵니다</p>
+            </li>
+            <li>
+                <h5>염증 및 과민반응 억제</h5>
+                <p>영유아도 안심하고 사용 할 수<br> 있는
+                    성분으로 염증 완화에<br> 도움을 줍니다</p>
+            </li>
+        </ul>
+
+    </article>
+
+    <article class="outro">
+        <div class="circle"></div>
+
+        <ul class="outro-title">
+            <li>
+                <p>순도는 높지만 <br>
+                    성분은 깨끗하게</p>
+            </li>
+            <li>
+                <p>피부과학에 진심을 담다</p>
+                <img src="../image/logo.png" alt="">
+            </li>
+        </ul>
+
+
+
+
+    </article>
+
+
+    <footer class="page">
+        <div class="inner">
+            <ul class="footer-nav">
+                <li><a href="contents/about_us.html">비판톨</a></li>
+                <li><a href="#">개인정보처리방침</a></li>
+                <li><a href="#">사용약관</a></li>
+                <li><a href="#">바이엘코리아</a></li>
+                <li><a href="#">바이엘 컨슈머헬스</a></li>
+                <li><a href="#">고객센터</a></li>
+            </ul>
+            <div class="txt-wrap">
+                <p>바이엘코리아(주) | 대표자명 : 이진아 </p>
+                <p> 주소 : 서울특별시 영등포구 여의대로 108(여의도동) 파크원, 타워2 23층 바이엘코리아</p>
+                <p>사업자번호 : 120-81-00467 </p>
+                <p>TEL : 02-829-6600</p>
+            </div>
+
+            <p class="copy">&copy; Bayer Korea Ltd. All rights reserved.</p>
+
+
+            <ul class="sns-wrap">
+                <li class="facebook"><a href="https://www.facebook.com/bayerkoreach" target="_blank">공식 페이스북 바로가기</a>
+                </li>
+                <li class="insta"><a href="https://www.instagram.com/bayerkorea_ch" target="_blank">공식 인스타그램 바로가기</a>
+                </li>
+                <li class="youtube"><a href="https://www.youtube.com/@Beroccakorea" target="_blank">공식 유튜브 바로가기</a></li>
+            </ul>
+        </div>
+    </footer>
+
+</body>
+
+</html>

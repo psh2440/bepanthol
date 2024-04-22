@@ -1,0 +1,277 @@
+@charset "utf-8";
+
+/***** ingredient.css  *********************************************/
+
+
+html,
+body {
+    width: 100%;
+    height: 100%;
+    /* outline: 2px solid red; */
+}
+
+body {
+    font-family: "Sejong hospital Light";
+}
+
+a {
+    display: block;
+}
+
+
+/*//////  main .main-slide  ////////////////////////////////////////////*/
+/* 공통 */
+
+
+.main {
+    width: 100%;
+    height: 200%;
+    text-align: center;
+}
+
+.content-box {
+    width: 100%;
+    height: 50%;
+    padding-top: 100px;
+    box-sizing: border-box;
+}
+
+.title-box {
+    width: 50%;
+
+    margin: 4% auto;
+}
+
+.title-box p:first-child {
+    font-weight: bold;
+    font-size: 20px;
+    color: #0067FF;
+    margin-bottom: 10px;
+}
+
+.title-box p:last-child {}
+
+.img-box {
+    width: 80%;
+    margin: 8% auto 0;
+}
+
+.img-box img {
+    width: 50%;
+}
+
+.img-box img:last-child {
+    position: relative;
+    z-index: 333;
+}
+
+.fix-img {
+    position: fixed;
+    top: 60%;
+    left: 50%;
+    transform: translate(-50%, -60%);
+    z-index: 888;
+}
+
+.con1 {
+    background-color: rgb(248, 248, 248);
+}
+
+.con2 {
+    background-color: rgb(222, 240, 252);
+
+}
+
+/***/
+.what-is,
+.how-to {
+    width: 100%;
+    height: calc(100% - 100px);
+    padding-top: 80px;
+    padding-bottom: 20px;
+    text-align: center;
+    /* outline: 2px solid green; */
+}
+
+.what-is .title-box,
+.how-to .title-box {
+    margin: 4% auto 2%;
+}
+
+.main-title p:first-child {
+    font-size: 18px;
+    margin-bottom: 5px;
+}
+
+.main-title p:nth-child(2) {
+    font-size: 24px;
+    color: #0067FF;
+    font-weight: bold;
+    text-decoration: underline;
+    margin-bottom: 15px;
+}
+
+.main-title .txt-explain {
+    line-height: 1.5;
+    margin-bottom: 50px;
+}
+
+.main-title .txt-explain span {
+    color: #0067FF;
+    font-weight: bold;
+    text-decoration: underline;
+
+}
+
+
+
+.step {
+    width: 70%;
+    margin: 0 auto;
+
+}
+
+.step li {
+    width: 30%;
+    /* outline: 2px solid pink; */
+}
+
+.step li:hover p {
+    text-decoration: underline;
+}
+
+
+.step li img {
+    display: inline-block;
+    width: 60%;
+    margin-bottom: 15px;
+
+    
+    transition: all 0.5s;
+
+}
+
+.step li:hover img {
+    transform: scale(1.1);
+}
+
+
+.step li p:nth-child(2) {
+    color: #0067FF;
+    font-weight: bold;
+    margin-bottom: 15px;
+}
+
+.step li~li {
+    margin-left: 5%;
+}
+
+
+/*****/
+
+.how-to {
+    /*  background-color: #96d7ff; */
+    background: url(../image/howto-bg2.png) no-repeat top/cover;
+
+}
+
+.how-to .title-box p {
+    color: #fff;
+}
+
+.how-to .main-title p {
+    color: #fff;
+}
+
+.how-to .main-title {
+    margin-bottom: 30px;
+}
+
+.list-box {
+    width: 70%;
+    /* outline: 2px solid red; */
+    background: #fff;
+    margin: 5% auto;
+
+}
+
+.list-box li {
+    /* outline: 2px solid blue; */
+    float: left;
+    width: 25%;
+    padding: 5% 2%;
+    box-sizing: border-box;
+    text-align: center;
+
+}
+
+
+
+.list-box li h5 {
+    height: 40px;
+    margin-bottom: 15px;
+    position: relative;
+    font-size: 22px;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+
+.list-box li h5::after {
+    content: "";
+    display: block;
+    width: 100%;
+    height: 5px;
+    background-color: rgb(44, 146, 255);
+    position: absolute;
+    bottom: -50%;
+    left: 0;
+}
+
+.list-box li p {
+    padding-top: 20px;
+    height: 100px;
+    margin-top: 30px;
+    line-height: 1.5;
+}
+
+
+/**/
+
+.outro {
+    width: 100%;
+    height: 100%;
+    background: url(../image/i-outro3.png) no-repeat top;
+
+}
+
+.circle {
+    width: 550px;
+    height: 550px;
+    background-color: #fff;
+    border-radius: 50%;
+    position: relative;
+    top: 60%;
+    left: 50%;
+    transform: translate(-50%, -60%);
+}
+
+
+.outro-title {
+    width: 50%;
+    margin: 0 auto;
+}
+
+.outro-title>li {
+    width: 30%;
+    float: left;
+    /* outline: 2px solid red; */
+    font-size: 35px;
+    font-weight: bold;
+    position: relative;
+}
+
+.outro-title li:first-child {
+    text-align: right;
+    margin-right: 40%;
+}

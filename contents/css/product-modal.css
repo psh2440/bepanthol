@@ -1,0 +1,310 @@
+@charset "utf-8";
+
+
+/***** product_us.css  *********************************************/
+
+
+html,
+body {
+    width: 100%;
+    height: 100%;
+}
+
+body {
+    font-family: "Sejong hospital Light";
+}
+
+/*///////////////////////////////////////////////////*/
+
+
+
+main {
+    /* outline: 2px solid red; */
+    width: 100%;
+    height: 100%;
+    background: url(../image/product-main-bg.png) no-repeat top center;
+    text-align: center;
+}
+
+main .main-title {
+    position: relative;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%, -40%);
+    text-transform: uppercase;
+
+    color: #fff
+}
+
+main .main-title p {
+    font-size: 36px;
+    margin-bottom: 20px;
+}
+
+main .main-title h2 {
+    font-size: 50px;
+    margin-bottom: 20px;
+    font-weight: bold;
+}
+
+main .main-title h3 {
+    font-size: 28px;
+    margin-bottom: 60px;
+}
+
+
+main .list-wrap {
+    /* outline: 2px solid red; */
+    width: 60%;
+    margin: 0 auto;
+    position: relative;
+    top: 36%;
+    /*  transform: translateX(-40%) */
+}
+
+main .list-wrap li {
+    /* outline: 2px solid blue; */
+    width: 20%;
+    background-color: #fff;
+    padding: 20px 15px;
+    box-sizing: border-box;
+    margin: 2.5%;
+    border-radius: 100px;
+}
+
+main .list-wrap li:hover {
+    background-color: rgb(255, 255, 209);
+}
+
+main .list-wrap li a {
+    display: block;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+
+
+
+
+/*******  section  ***************************************/
+
+section {
+    width: 70%;
+    margin: 0 auto;
+    padding-top: 30px;
+
+    /* outline: 2px solid blue; */
+}
+
+section>ul>li img {
+    display: block;
+}
+
+/**********   공통  **************************/
+section .product-wrap {
+    padding-top: 200px;
+}
+
+section .list-box {
+    display: inline-block;
+    font-size: 26px;
+    background: rgb(209, 239, 255);
+    padding: 20px 26px;
+    border-radius: 100px;
+    font-weight: bold;
+}
+
+
+section .product-box {
+    width: 100%;
+    text-align: center;
+    border-bottom: 2px solid rgba(157, 219, 252, 0.329);
+    margin-bottom: 50px;
+}
+
+section .product-box:last-child {
+    border-bottom: none;
+}
+
+section .product-box li {
+    /* outline: 2px solid green; */
+    width: 50%;
+    cursor: pointer;
+    padding-bottom: 130px;
+    box-sizing: border-box;
+
+}
+
+section .product-box li:hover {
+    background: url(../image/circle.png) no-repeat top center;
+    background-size: 70%;
+}
+
+section .product-box li img {
+    display: inline-block;
+    width: 100%;
+}
+
+section .product-box li p {
+    margin-bottom: 10px;
+}
+
+section .product-box li p a {
+    color: rgb(0, 157, 241);
+}
+
+section .product-box li h5 {
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+
+
+
+/*********************************************/
+
+.face-wrap {}
+
+.body-wrap {}
+
+.lip-wrap {}
+
+.multi-wrap .product-box {
+    border: none;
+    margin-bottom: 100px;
+}
+
+/*****top버튼*******/
+
+.top {
+    width: 60px;
+    height: 60px;
+    line-height: 60px;
+    background-color: rgb(209, 239, 255);
+    border-radius: 50%;
+    border: 2px solid #fff;
+    text-align: center;
+
+    position: fixed;
+    right: 3%;
+    bottom: 8%;
+
+    display: none;
+}
+
+.top a {
+    display: block;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*************************/
+
+.modal-bg {
+    display: none;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.7);
+
+    position: fixed;
+    left: 0;
+    top: 0;
+}
+
+.modal-con {
+    background-color: #fff;
+    width: 50%;
+    height: 400px;
+    margin: 0 auto;
+    position: relative;
+    top: 50%;
+    transform: translateY(-50%);
+    padding: 5px 10px;
+
+    border-radius: 50px;
+}
+
+.modal-contop {
+    width: 100%;
+    height: 360px;
+    /* outline: 2px solid red; */
+}
+
+
+
+
+
+.modal-contop .modal-img {
+    width: 40%;
+    float: left;
+    height: 100%;
+   /*  outline: 2px solid blue; */
+}
+
+.modal-contop .modal-img img {
+    display: block;
+    position: relative;
+    top: 50%;
+    left: 0;
+    transform: translateY(-50%);
+}
+
+/************************/
+.modal-contop .modal-txtbox {
+    width: 60%;
+    float: right;
+    height: 100%;
+    /* outline: 2px solid blue; */
+
+    
+}
+
+.modal-contop .modal-txtbox p:first-child {
+    margin: 3% auto;
+
+    font-weight: bold;
+}
+
+
+/************************/
+
+.point {
+    display: inline-block;
+    border-bottom: 3px solid #7fbade;
+}
+
+
+/************************/
+.modal-con .off {
+    /* outline: 2px solid rgb(0, 0, 255); */
+    height: 40px;
+    line-height: 40px;
+    
+
+}
+
+
+
+
+.off:hover a {
+    background-color: #7fbade;
+    color: #fff;
+    
+
+}
+
+.off a {
+    outline: 1px solid #7fbade;
+    border-radius: 50px;
+    padding: 10px 20px;
+}
